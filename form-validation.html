@@ -1,61 +1,121 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Intro To Forms</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" type="text/css" href="css/resume-stylesheet.css">
 </head>
 
-<header></header>
+<header>
+  <h2>Registration Form</h2>
+</header>
 
 <br>
-<br>
+
 <body>
-  <h3>Customer Details</h3>
-  <form action="lethabomathabatha.m@gmail.com" method="POST">
-    <h4>Our Basic Form</h4>
-    <label for="rating">Good</label>
-      <input type="radio" name="rating" value="Good">
 
-      <label for="rating">Okay</label>
-      <input type="radio" name="rating" value="Okay">
-
-      <label for="rating">Poor</label>
-      <input type="radio" name="rating" value="Poor">
+  <form action=" https://formsubmit.co/lethabomathabatha.m@gmail.com" method="POST">
+    <label for="id">User ID:</label>
+    <input type="text" id="id" name="user_id" required minlength="5" maxlength="12">
+  <br>
+  <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="user_password" required minlength="7" maxlength="12">
+  <br>
+  <br>
     <label for="name">Name:</label>
     <input type="text" id="name" name="user_name" required>
+  <br>
+  <br>
+    <label for="text">Address:</label>
+    <input type="text" id="address" name="user_address">
+  <br>
+  <br>
+    <label for="country">Country:</label>
+    <select name="country" id="country" required>
+      <option value="">Select a Country</option>
+        <option value="Algeria">Algeria</option>
+        <option value="Angola">Angola</option>
+        <option value="Benin">Benin</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Burkina Faso">Burkina Faso</option>
+        <option value="Burundi">Burundi</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Cape Verde">Cape Verde</option>
+        <option value="Central African Republic">Central African Republic</option>
+        <option value="Chad">Chad</option>
+        <option value="Comoros">Comoros</option>
+        <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+        <option value="Republic of the Congo">Republic of the Congo</option>
+        <option value="Djibouti">Djibouti</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Equatorial Guinea">Equatorial Guinea</option>
+        <option value="Eritrea">Eritrea</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Gabon">Gabon</option>
+        <option value="Gambia">Gambia</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Guinea">Guinea</option>
+        <option value="Guinea-Bissau">Guinea-Bissau</option>
+        <option value="Ivory Coast">Ivory Coast</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Lesotho">Lesotho</option>
+        <option value="Liberia">Liberia</option>
+        <option value="Libya">Libya</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Malawi">Malawi</option>
+        <option value="Mali">Mali</option>
+        <option value="Mauritania">Mauritania</option>
+        <option value="Mauritius">Mauritius</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mozambique">Mozambique</option>
+        <option value="Namibia">Namibia</option>
+        <option value="Niger">Niger</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Seychelles">Seychelles</option>
+        <option value="Sierra Leone">Sierra Leone</option>
+        <option value="Somalia">Somalia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="South Sudan">South Sudan</option>
+        <option value="Sudan">Sudan</option>
+        <option value="Swaziland">Swaziland</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Togo">Togo</option>
+        <option value="Tunisia">Tunisia</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+    </select>
+  <br>
+  <br>
+    <label for="zipCode">Zip Code:</label>
+    <input type="number" id="zipCode" name="user_zipCode" required>
+  <br>
+  <br>
     <label for="mail">Email:</label>
-    <input type="mail" id="mail" name="user_mail">
-    <label for="phone">Phone Number:</label>
-    <input type="number" id="phone" name="user_number">
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="user_password">
-    <label for="msg">Message:</label>
-    <textarea name="user_message" id="msg"></textarea>
-    <input type="submit">
+    <input type="mail" id="mail" name="user_mail" required>
+  <br>
+  <br>
+    <label for="sex">Sex:</label>
+    <input type="radio" name="sex" value="Male" required>Male    
+    <input type="radio" name="sex" value="Female" required>Female
+  <br>
+  <br>
+    <label for="language">Language:</label>
+    <input type="checkbox" name="language" value="English" required>English
+    <input type="checkbox" name="language" value="Non English" required>Non English
+  <br>
+  <br>
+    <label for="about">About:</label>
+  <br>
+    <textarea name="about" id="text" cols="50" rows="7" placeholder="Enter your message here (optional)"></textarea>
+  <br>
+    <input class="submit" type="submit" value="Submit">
+
   </form>
 </body>
-<br>
-<br>
-
-<body>
-  <h2>Contact Me</h2>
-    <form action="https://formsubmit.co/lethabomathabatha.m@gmail.com" method="POST">
-      <input type="email" name="email" id="email" placeholder="Enter email here">
-
-      <br>
-      <select name="_subject" id="subject">
-        <option value="Interview Opportunity">Interview Opportunity</option>
-        <option value="Recruitment">Recruitment</option>
-        <option value="Website Feedback">Website Feedback</option>
-      </select>
-
-      <br>
-
-      <textarea name="message" id="text" cols="30" rows="10" placeholder="Enter your message here (optional)"></textarea>
-      <input class="submit" type="submit" value="Send">
-    </form>
-</body>
-
 </html> 
 
 
